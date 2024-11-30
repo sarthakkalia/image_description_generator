@@ -1,0 +1,54 @@
+body,html{
+    height:100%;
+    margin:0;
+    font-family: Arial,sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+}
+body{
+    background: linear-gradient(-45deg,#ff9a9e,#fad0c4,#fad0c4,#ffdde1);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+@keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+/* Styling the form */
+.upload-form{
+    background:#ffffffc7;
+    padding:30px;
+    border-radius:10px;
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.2);
+    text-align:center;
+    width:300px;
+}
+.upload-form h2{
+    margin-bottom: 20px;
+    color: #333;
+}
+.file-input{
+    margin:15px 0;
+    padding:10px;
+    width:100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.submit-button{
+    background-color: #5cb85c;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+    width:100%;
+    transition: background-color 0.3s;
+}
+.submit-button:hover{
+    background-color: #4cae4c;
+}

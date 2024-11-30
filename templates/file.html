@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload</title>
+    <link rel="stylesheet" href="\static\style.css">
+</head>
+<body>
+    <div class="upload-form">
+        <h2>Upload Your File</h2>
+        <form action="/file" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" class="file-input" required><br>
+            <button type="submit" class="submit-button">Submit</button>
+        </form><br>
+
+        {% if file_url %}
+                <img src="{{ file_url }}" style="height:300px;width:300px;">
+        {% endif %}
+        <h6>TEXT: {{ prediction }}</h6>
+        <a href="{{ url_for('audio') }}"><button class="submit-button">audio</button></a>
+    </div>
+</body>
+</html>
