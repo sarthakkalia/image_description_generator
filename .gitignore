@@ -35,5 +35,5 @@ MANIFEST
 # Installer logs
 pip-log.txt
 pip
-.venv\
-venv\
+.venv/
+venv/
